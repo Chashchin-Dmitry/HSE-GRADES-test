@@ -74,8 +74,6 @@ def button_menu(message: Message) -> None:
             surname_cell_value = surname_cell.row
             object_cell_value = object_cell.col
 
-            print(surname_cell_value, object_cell_value)
-            print(surname_cell, object_cell)
             val = worksheet.cell(surname_cell_value, object_cell_value).value
 
             bot.send_message(
